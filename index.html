@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Doctor Appointment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Doctor Appointment System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#book-appointment">Book Appointment</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Online Doctor Appointment System</h2>
+        <p>Book your appointment with a doctor anytime, anywhere!</p>
+    </section>
+
+    <section id="book-appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="patient-name">Your Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required><br>
+
+            <label for="doctor-select">Choose a Doctor:</label>
+            <select id="doctor-select" name="doctor" required>
+                <option value="doctor1">Dr. John Doe</option>
+                <option value="doctor2">Dr. Jane Smith</option>
+            </select><br>
+
+            <label for="appointment-date">Select Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <section id="doctors">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctor">
+            <h3>Dr. John Doe</h3>
+            <p>Specialist in General Medicine</p>
+        </div>
+        <div class="doctor">
+            <h3>Dr. Jane Smith</h3>
+            <p>Specialist in Pediatrics</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Doctor Appointment System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
